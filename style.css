@@ -131,4 +131,15 @@ main div{
 footer{
     background-color: rgb(24, 24, 24);
     grid-column: 1/7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor1);
+    padding-left: 10px;
 }
