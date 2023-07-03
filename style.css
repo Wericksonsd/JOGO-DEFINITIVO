@@ -62,9 +62,33 @@ main{
     grid-column: 1/6;
     grid-row: 4/15;
     display: flex;
-    padding: 20px;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+main div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #8f8f48;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 40px;
+    font-weight: 700;
+    font-size: 3em;
+    color: var(--cor1);
+}
+
+#qtdDin{
+    color: var(--cor1);
+    font-weight: 600;
+    box-shadow: #050505;
+    position: absolute;
+    margin-top: 25px;
+    font-size: 2.5em;
 }
 
 #sideBar{
@@ -89,11 +113,6 @@ main{
 .qtdIcon p{
     font-size: 0.7em;
 }
-
-#qtdDin h2{
-    font-size: 2.5em;
-}
-
 
 #upgradeBar{
     background-color: var(--cor5);
