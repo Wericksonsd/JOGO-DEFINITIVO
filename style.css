@@ -152,6 +152,19 @@ main article span{
     text-align: center;
 }
 
+#trocaTelaEsq{
+    opacity: 0%;
+}
+
+#trocaTelaEsq:hover{
+    cursor: pointer;
+}
+
+#trocaTelaDir:hover{
+    cursor: pointer;
+}
+
+
 /* 
 
 
