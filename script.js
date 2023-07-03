@@ -40,7 +40,7 @@ var mainAtual = 1;
         autoVlEn = 50000;
 
 /////////// SERVIR //////////////
-    var qtdSs = documet.getElementById('qtdSs');
+    var qtdSs = documet.getElementById('qtdSs'),
         qtdUpSs = 1,
         qtdVlSs = 35000,
         preUpSs = 1,
@@ -118,20 +118,20 @@ function telaTexto(){
     switch(mainAtual){
 
         case 1:
-            qtdUpVal.textContent = qtdVlPx;
-            qtdUpTtl.textContent = qtdUpPx;
-            preUpVal.textContent = preVlPx;
-            preUpTtl.textContent = preUpPx;
-            autoUpVal.textContent = autoVlPx;
-            autoUpTtl.textContent = autoUpPx;
+            qtdUpVal.innerHTML = qtdVlPx;
+            qtdUpTtl.innerHTML = qtdUpPx;
+            preUpVal.innerHTML = preVlPx;
+            preUpTtl.innerHTML = preUpPx;
+            autoUpVal.innerHTML = autoVlPx;
+            autoUpTtl.innerHTML = autoUpPx;
         break;
         case 2:
-            qtdUpVal.textContent = qtdVlCt;
-            qtdUpTtl.textContent = qtdUpCt;
-            preUpVal.textContent = preVlCt;
-            preUpTtl.textContent = preUpCt;
-            autoUpVal.textContent = autoVlCt;
-            autoUpTtl.textContent = autoUpCt;
+            qtdUpVal.innerHTML= qtdVlCt;
+            qtdUpTtl.innerHTML= qtdUpCt;
+            preUpVal.innerHTML= preVlCt;
+            preUpTtl.innerHTML= preUpCt;
+            autoUpVal.innerHTML = autoVlCt;
+            autoUpTtl.innerHTML= autoUpCt;
         break;
         case 3:
             qtdUpVal.textContent = qtdVlPc;
