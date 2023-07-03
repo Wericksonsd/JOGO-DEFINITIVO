@@ -152,6 +152,39 @@ main article span{
     text-align: center;
 }
 
+/* 
+
+
+            DIVS TELAS 
+
+
+*/
+
+#idPescar{
+    background-color: rgb(44, 58, 138);
+}
+
+#idCortar{
+    background-color: rgb(59, 114, 116);
+    display: none;
+}
+
+#idPicar{
+    background-color: #884327;
+    display: none;
+}
+
+#idEnrolar{
+    background-color: #7e2f34;
+    display: none;
+}
+
+#idServir{
+    background-color: #8f8f48;
+    display: none;
+}
+
+
 footer{
     background-color: rgb(44, 44, 44);
     grid-column: 1/7;
