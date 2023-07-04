@@ -4,13 +4,15 @@ var mainAtual = 1;
 /////////////////////////////////
 
 /////////// PEIXE //////////////
-    var qtdPx = document.getElementById('qtdPx'),
+    var qtdTxPx = document.getElementById('qtdPxTx'),
+        qtdPx = 1,
         qtdUpPx = 1,
         qtdVlPx = 5000,
         preUpPx = 1,
         preVlPx = 3000,
         autoUpPx = 1,
         autoVlPx = 10000;
+        totalPx = 0;
 
 /////////// CORTE //////////////
     var qtdCt = document.getElementById('qtdCt'),
@@ -56,8 +58,31 @@ var mainAtual = 1;
     var autoUpVal = document.getElementById('autoVl');
     var autoUpTtl = document.getElementById('autoUp');
 
+//////////// DINHEIRO ////////////
+    var totalDin = document.getElementById('qtdDin');
+
+
+
+///////////////////////////// PIEXE
+    function pescar(){
+        if(qtdUpPx == 4){
+            totalPx += qtdPx * 1000; 
+        } else {
+            totalPx += qtdPx * qtdUpPx;
+        }
+        qtdTxPx.textContent = totalPx;
+    }
+
+
 function acaoBot(){
-    document.getElementById('idServir').textContent = 1;
+    switch (mainAtual){
+        case 1:
+            pescar();
+        break;
+        case 2:
+            return;
+        break;
+    }
 }
 
 function mudarTela(a){

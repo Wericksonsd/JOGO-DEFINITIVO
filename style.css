@@ -130,7 +130,8 @@ main article span{
     text-align: center;
 }
 
-.qtdIcon h2{
+.qtdIcon span{
+    font-size: 2em;
     font-weight: 400;
 }
 
