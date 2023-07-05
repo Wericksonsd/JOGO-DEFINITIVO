@@ -4,33 +4,33 @@ var mainAtual = 1;
 /////////////////////////////////
 
 /////////// PEIXE //////////////
-    var qtdTxPx = document.getElementById('qtdPxTx'),
-        qtdPx = 1,
-        qtdUpPx = 1,
-        qtdVlPx = 5000,
-        preUpPx = 1,
-        preVlPx = 3000,
-        autoUpPx = 1,
-        autoVlPx = 10000;
-        totalPx = 0;
+var qtdTxPx = document.querySelector('#qtdPxTx'),
+    qtdPx = 1,
+    qtdUpPx = 1,
+    qtdVlPx = 5000,
+    preUpPx = 1,
+    preVlPx = 3000,
+    autoUpPx = 1,
+    autoVlPx = 10000;
+    totalPx = 0;
 
 /////////// CORTE //////////////
-    var qtdCt = document.getElementById('qtdCt'),
-        qtdUpCt = 1,
-        qtdVlCt = 8000,
-        preUpCt = 1,
-        preVlCt = 5000,
-        autoUpCt = 1,
-        autoVlCt = 18000;
+var qtdCt = document.getElementById('qtdCt'),
+    qtdUpCt = 1,
+    qtdVlCt = 8000,
+    preUpCt = 1,
+    preVlCt = 5000,
+    autoUpCt = 1,
+    autoVlCt = 18000;
 
 /////////// PICAR //////////////
-    var qtdPc = documet.getElementById('qtdPc'),
-        qtdUpPc = 1,
-        qtdVlPc = 18000,
-        preUpPc = 1,
-        preVlPc = 12000,
-        autoUpPc = 1,
-        autoVlPc = 30000;
+var qtdPc = documet.getElementById('qtdPc'),
+    qtdUpPc = 1,
+    qtdVlPc = 18000,
+    preUpPc = 1,
+    preVlPc = 12000,
+    autoUpPc = 1,
+    autoVlPc = 30000;
 
 /////////// ENROLAR //////////////
     var qtdEn = documet.getElementById('qtdEn'),

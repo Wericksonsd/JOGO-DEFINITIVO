@@ -36,7 +36,7 @@
             </span>
         </div>
         <main>          
-            <div id="idPescar" onclick="acaoBot()">
+            <div id="idPescar" onclick="pescar()">
                 PESCAR
             </div>
             <div id="idCortar">
@@ -64,8 +64,8 @@
             <h1 id="qtdDin">000000</h1>
         </main>
         <div id="sideBar">
-            <span class="qtdIcon"><span id="qtdPxTx">0</span><p>PEIXES</p></span>
-            <span class="qtdIcon"><h2 id="qtdCt">A</h2><p>PEIXES</p></span>
+            <span class="qtdIcon"><span id="qtdPxTx">1</span><p>PEIXES</p></span>
+            <span class="qtdIcon"><h2 id="qtdCtTx">A</h2><p>PEIXES</p></span>
             <span class="qtdIcon"><h2 id="qtdPc">A</h2><p>PEIXES</p></span>
             <span class="qtdIcon"><h2 id="qtdEn">A</h2><p>PEIXES</p></span>           
             <span class="qtdIcon"><h2 id="qtdSs">A</h2><p>PEIXES</p></span>
@@ -89,6 +89,15 @@
         <footer>Desenvolvido por <a href="#">Werickson Dauta</a></footer>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+    var totalPx = 0;
+    var qtdPx = 1;
+    var qtdTxPx = document.getElementById("#qtdPxTx");
+
+    function pescar(){        
+        totalPx += qtdPx * qtdUpPx;        
+        qtdTxPx.textContent = totalPx;
+    }
+    </script>
 </body>
 </html>
