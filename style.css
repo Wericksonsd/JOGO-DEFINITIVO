@@ -106,6 +106,24 @@ main article span{
     opacity: 50%;
 }
 
+main button{
+    position: absolute;
+    font-size: 2em;
+    min-height: 30%;
+    min-width: 50%;
+    font-weight: 700;
+    padding: 30px;
+    border: none;
+    background-color: rgb(25, 35, 87);
+    color: var(--cor1);
+    border-radius: 10px;
+    bottom: 10%;
+}
+
+main button:hover{
+    cursor: pointer;
+}
+
 #qtdDin{
     color: var(--cor1);
     font-weight: 600;

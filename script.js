@@ -15,7 +15,7 @@ var qtdTxPx = document.getElementById('qtdPxTx'),
     totalPx = 0;
 
 /////////// CORTE //////////////
-var qtdCt = document.getElementById('qtdCt'),
+var qtdTxt = document.getElementById('qtdCt'),
     qtdUpCt = 1,
     qtdVlCt = 8000,
     preUpCt = 1,
@@ -63,7 +63,7 @@ var qtdPc = documet.getElementById('qtdPc'),
 
 
 
-///////////////////////////// PIEXE
+///////////////////////////// PEIXE
     function pescar(){
         if(qtdUpPx == 4){
             totalPx += qtdPx * 1000; 
@@ -73,6 +73,23 @@ var qtdPc = documet.getElementById('qtdPc'),
         qtdTxPx.textContent = totalPx;
     }
 
+///////////////////////////// CORTE
+function cortar(){
+    if (totalPx > 0){
+        if(qtdUpCt == 4){
+            totalCt += qtdPx * totalPx;
+            totalPx = 0; 
+        } else {
+            totalCt += qtdCt * qtdUpCt;
+            totalPx -= 1;
+        }
+        qtdTxCt.textContent = totalCt;
+        qtdTxPx.textContent = totalPx;
+    } else {
+        return;
+    }
+}
+
 
 function acaoBot(){
     switch (mainAtual){
@@ -80,6 +97,9 @@ function acaoBot(){
             pescar();
         break;
         case 2:
+            cortar();
+        break;
+        case 3:
             return;
         break;
     }
@@ -139,6 +159,7 @@ function mudarTela(a){
 }
 
 function telaTexto(){
+    var botaoTx = document.getElementById('botaoAcao');
 
     switch(mainAtual){
 
@@ -149,6 +170,7 @@ function telaTexto(){
             preUpTtl.innerHTML = preUpPx;
             autoUpVal.innerHTML = autoVlPx;
             autoUpTtl.innerHTML = autoUpPx;
+            botaoTx.textContent = 'PESCAR';
         break;
         case 2:
             qtdUpVal.innerHTML= qtdVlCt;
@@ -157,6 +179,8 @@ function telaTexto(){
             preUpTtl.innerHTML= preUpCt;
             autoUpVal.innerHTML = autoVlCt;
             autoUpTtl.innerHTML= autoUpCt;
+            botaoTx.textContent = "CORTAR";
+            botaoTx.style.backgroundColor = "rgb(25, 35, 0)";
         break;
         case 3:
             qtdUpVal.textContent = qtdVlPc;
