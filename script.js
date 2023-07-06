@@ -4,7 +4,7 @@ var mainAtual = 1;
 /////////////////////////////////
 
 /////////// PEIXE //////////////
-var qtdTxPx = document.querySelector('#qtdPxTx'),
+var qtdTxPx = document.getElementById('qtdPxTx'),
     qtdPx = 1,
     qtdUpPx = 1,
     qtdVlPx = 5000,
