@@ -109,12 +109,13 @@ main article span{
 main button{
     position: absolute;
     font-size: 2em;
-    min-height: 30%;
-    min-width: 50%;
+    max-height: 150px;
+    max-width: 350px;
     font-weight: 700;
     padding: 30px;
     border: none;
     background-color: rgb(25, 35, 87);
+    opacity: 80%;
     color: var(--cor1);
     border-radius: 10px;
     bottom: 10%;

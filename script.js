@@ -1,7 +1,7 @@
-var mainAtual = 1;
-
 /////////////////////// VARIÁVEIS
 /////////////////////////////////
+
+var mainAtual = 1;
 
 /////////// PEIXE //////////////
 var qtdTxPx = document.getElementById('qtdPxTx'),
