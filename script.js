@@ -1,10 +1,10 @@
 /////////////////////// VARIÁVEIS
 /////////////////////////////////
 
-var mainAtual = 1;
+let mainAtual = 1;
 
 /////////// PEIXE //////////////
-var qtdTxPx = document.getElementById('qtdPxTx'),
+let qtdTxPx = document.getElementById('qtdPxTx'),
     qtdPx = 1,
     qtdUpPx = 1,
     qtdVlPx = 5000,
@@ -15,7 +15,7 @@ var qtdTxPx = document.getElementById('qtdPxTx'),
     totalPx = 0;
 
 /////////// CORTE //////////////
-var qtdTxt = document.getElementById('qtdCt'),
+let qtdTxt = document.getElementById('qtdCt'),
     qtdUpCt = 1,
     qtdVlCt = 8000,
     preUpCt = 1,
@@ -24,7 +24,7 @@ var qtdTxt = document.getElementById('qtdCt'),
     autoVlCt = 18000;
 
 /////////// PICAR //////////////
-var qtdPc = documet.getElementById('qtdPc'),
+let qtdPc = documet.getElementById('qtdPc'),
     qtdUpPc = 1,
     qtdVlPc = 18000,
     preUpPc = 1,
@@ -33,7 +33,7 @@ var qtdPc = documet.getElementById('qtdPc'),
     autoVlPc = 30000;
 
 /////////// ENROLAR //////////////
-    var qtdEn = documet.getElementById('qtdEn'),
+    let qtdEn = documet.getElementById('qtdEn'),
         qtdUpEn = 1,
         qtdVlEn = 25000,
         preUpEn = 1,
